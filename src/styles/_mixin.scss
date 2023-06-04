@@ -15,6 +15,11 @@
   color: $color;
   background: $background;
   border-color: $border;
+  &:hover {
+    color: $hover-color;
+    background: $hover-background;
+    border-color: $hover-border;
+  }
   &:disabled,
   &.disabled {
     color: $color;
