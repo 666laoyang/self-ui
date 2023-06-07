@@ -83,5 +83,6 @@
     "tslib": "^2.5.2",
     "typescript": "^5.1.3",
     "webpack": "^5.84.1"
-  }
+  },
+  "homepage": "https://[laoyang666].github.io/github-actions-demo"
 }
