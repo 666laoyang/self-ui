@@ -1,0 +1,24 @@
+// 语言
+language: node_js
+// node版本
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+// 环境
+env:
+  - CI=true
+script:
+// 构建命令
+  - npm run build-storybook
+// 下面这一段的意思是把构建好的包发到 `GitHub` 的 `pages`
+deploy:
+  provider: pages
+  skip_cleanup: true
+  // 配置token 关键
+  github_token: $github_token
+  // 构建出来的包的文件夹名称
+  local_dir: storybook-static
+  on:
+    branch: master
